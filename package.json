@@ -1,0 +1,24 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "a swag to-do list",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "pg": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tthoraldson/toDoList.git"
+  },
+  "author": "theresa.thoraldson@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tthoraldson/toDoList/issues"
+  },
+  "homepage": "https://github.com/tthoraldson/toDoList#readme"
+}
