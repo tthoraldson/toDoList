@@ -4,10 +4,13 @@ margin: 0 auto !important;
 float: none !important;
 }
 
-.legend, .alerts{
+.legend, .alerts, .addTask {
   text-align: center;
 }
 
+.addTask {
+  margin-bottom: 5px;
+}
 /*.alerts{
   height: 50px;
 }*/

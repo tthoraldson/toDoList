@@ -2,11 +2,20 @@ $(document).ready(function(){
 
   // COMPLETE CLICKED TASK
   $('.uncompletedTasksContainer').on('click', '.glyphicon-ok', completeClickedTask);
+
+  // DELETE CLICKED TASK
+    $('.uncompletedTasksContainer').on('click', '.glyphicon-remove', deleteClickedTask);
 });
 
 // GET ALL TASKS
 function getAllTasks(){
-  
+  //CLEARS DIVS
+  $('.uncompletedTasksContainer').empty();
+  $('.completedTasksContainer').empty();
+
+  // GETS TASKS
+  getUncompletedTasks()
+  getCompletedTasks()
 }
 
 // GET ALL UNCOMPLETED TASKS FROM DATABASE
