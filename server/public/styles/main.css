@@ -11,6 +11,7 @@ float: none !important;
 .addTask {
   margin-bottom: 5px;
 }
-/*.alerts{
+
+.modalAlerts{
   height: 50px;
-}*/
+}

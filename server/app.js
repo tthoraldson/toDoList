@@ -3,10 +3,15 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
-// Our routes
-
+// REQUIRE ROUTES
+var uncompletedTasks = require('./routes/uncompletedTasks');
+var completedTasks = require('./routes/completedTasks');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// USE ROUTES
+app.use('/uncompletedTasks', uncompletedTasks);
+app.use('/completedTasks', completedTasks);
 
 
 // Catchall route
