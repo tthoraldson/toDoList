@@ -1,3 +1,13 @@
-h1 {
-  color: red;
+body{
+max-width: 600px;
+margin: 0 auto !important;
+float: none !important;
 }
+
+.legend, .alerts{
+  text-align: center;
+}
+
+/*.alerts{
+  height: 50px;
+}*/
