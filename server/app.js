@@ -6,12 +6,18 @@ var bodyParser = require('body-parser');
 // REQUIRE ROUTES
 var uncompletedTasks = require('./routes/uncompletedTasks');
 var completedTasks = require('./routes/completedTasks');
+var postTask = require('./routes/postTask');
+var completeClickedTask = require('./routes/completeClickedTask');
+var deleteClickedTask = require('./routes/deleteClickedTask');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // USE ROUTES
 app.use('/uncompletedTasks', uncompletedTasks);
 app.use('/completedTasks', completedTasks);
+app.use('/postTask', postTask);
+app.use('/completeClickedTask', completeClickedTask);
+app.use('/deleteClickedTask', deleteClickedTask);
 
 
 // Catchall route

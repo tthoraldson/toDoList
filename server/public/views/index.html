@@ -27,11 +27,13 @@
               </div>
               <div class="modal-body">
                 <div class="modalAlerts">
+                  <div class="alert alert-info" role="alert"><b>Get Creative!</b> Try adding some new tasks to your to-do list!
+                  </div>
                 </div>
                 <form id="taskForm">
-                  <input type="text" class="form-control" placeholder="Type your task here! 200 Character Maximum." id="task"><br />
+                  <input type="text" class="form-control" placeholder="Type your task here! 200 Character Maximum." name="task" id="task"><br />
                   <button type="button" class="btn btn-default" data-dismiss="modal" id="cancelTask">Close</button>
-                  <button type="button" class="btn btn-primary" id="addTask">Add Task</button>
+                  <button type="button" class="btn btn-primary" id="submit">Add Task</button>
                 </form>
               </div>
             </div>
@@ -43,9 +45,9 @@
         <div class="legend">
           <p><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Complete the task&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Delete the task</p>
         </div>
-          <ul class="list-group uncompletedTasksContainer">
-            <li class="list-group-item"><span class="glyphicon glyphicon-ok" alt="complete task"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-remove" alt="delete task"></span>&nbsp;&nbsp;This is a random Task</li>
-          </ul>
+        <ul class="list-group uncompletedTasksContainer">
+          <li class="list-group-item"><span class="glyphicon glyphicon-ok" alt="complete task"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-remove" alt="delete task"></span>&nbsp;&nbsp;This is a random Task</li>
+        </ul>
       </div>
       <div class="completedTasks">
         <center><h2>Completed Tasks</h2></center>
